@@ -113,7 +113,7 @@ func (l ListMPUploadMessage) String() string {
 		listFormat,
 		l.Object.Initiated.Format(dateFormat),
 		path,
-		l.Object.UploadId,
+		l.Object.UploadID,
 	)
 
 	return s

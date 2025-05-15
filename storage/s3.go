@@ -1255,7 +1255,7 @@ func (s *S3) ListMultipartUploads(ctx context.Context, url *url.URL) <-chan *Upl
 					objCh <- &UploadObject{
 						URL:          newurl,
 						Initiated:    c.Initiated,
-						UploadId:     aws.StringValue(c.UploadId),
+						UploadID:     aws.StringValue(c.UploadId),
 						StorageClass: StorageClass(aws.StringValue(c.StorageClass)),
 					}
 
